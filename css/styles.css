@@ -6,6 +6,14 @@ h1 {
     color: #fff;
 }
 
+h2 {
+    font-family: "Montserrat";
+    line-height: 1.5;
+    font-weight: 700;
+    color: #81d4fa;
+}
+
+/**** First Section *****/
 .download_button{
     margin: 5% 5% 5% 18%;
 }
@@ -49,4 +57,11 @@ h1 {
 .image_title {
     width: 70%;
     transform: rotate(340deg);
+}
+
+/**** Second Section (About Me) *****/
+#about_me {
+    font-family: "Montserrat";
+    background-color: #fff;
+    font-weight: 500;
 }
