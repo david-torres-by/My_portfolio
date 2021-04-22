@@ -156,26 +156,7 @@ body, hr.fancy-line:after {
     border-radius: 10%;
 }
 
-/**** Social Media Section ****/
-#social_media {
-    font-family: "Montserrat";
-    background-color: #075374;
-    font-weight: 500;
-    text-align: center;
-}
-
-.social_media_header {
-    font-family: "Montserrat";
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 800;
-    color: #fff;
-}
-
-.download_button{
-    margin: 5% 5% 5% 5%;
-}
-
+/**** Images in Portfolio ****/
 .hovereffect {
     width: 50%;
     height: 50%;
@@ -184,7 +165,7 @@ body, hr.fancy-line:after {
     position: relative;
     text-align: center;
     cursor: default;
-    background: #53C0F3;
+    background: #000;
   }
   
   .hovereffect .overlay {
@@ -219,20 +200,23 @@ body, hr.fancy-line:after {
   
   .hovereffect h2 {
     text-transform: uppercase;
-    color: #fff;
+    color:#fff;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-family: "Montserrat";
+    font-weight: bold;
     overflow: hidden;
     padding: 0.5em 0;
     background-color: transparent;
   }
   
+
+  /**Line after you click the image**/
   .hovereffect h2:after {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 25%;
+    width: 50%;
     height: 2px;
     background: #fff;
     content: '';
@@ -250,6 +234,9 @@ body, hr.fancy-line:after {
   .hovereffect a, .hovereffect p {
     color: #FFF;
     opacity: 0;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: medium;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -264,9 +251,23 @@ body, hr.fancy-line:after {
     transform: translate3d(0,0,0);
   }
 
-  .image_detail {
+
+/**** Social Media Section ****/
+#social_media {
     font-family: "Montserrat";
     background-color: #075374;
     font-weight: 500;
     text-align: center;
-  }
+}
+
+.social_media_header {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #fff;
+}
+
+.download_button{
+    margin: 5% 5% 5% 5%;
+}
