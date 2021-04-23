@@ -157,16 +157,18 @@ body, hr.fancy-line:after {
 }
 
 /**** Images in Portfolio ****/
+
 .hovereffect {
     width: 50%;
     height: 40%;
+    float: left;
     margin-left: 25%;
     overflow: hidden;
     position: relative;
     text-align: center;
     cursor: default;
-    background: #000;
     margin-bottom: 2%;
+    background-color: #000;
   }
   
   .hovereffect .overlay {
@@ -217,7 +219,7 @@ body, hr.fancy-line:after {
   .hovereffect h2:after {
     position: absolute;
     bottom: 0;
-    left: 25%;
+    left: 0%;
     width: 50%;
     height: 2px;
     background: #fff;
@@ -229,6 +231,7 @@ body, hr.fancy-line:after {
   }
   
   .hovereffect:hover h2:after {
+    left: 25%;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
