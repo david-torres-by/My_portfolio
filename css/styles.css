@@ -145,37 +145,39 @@ body, hr.fancy-line:after {
 .portfolio_header {
     font-family: "Montserrat";
     font-size: 3rem;
-    line-height: 1.5;
     font-weight: 800;
     color: #fff;
 }
 
-.testimonial_image {
-    padding-top: 1%;
-    width: 50%;
-    border-radius: 10%;
+.instructions {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
 }
 
 /**** Images in Portfolio ****/
 .hovereffect {
     width: 50%;
-    height: 50%;
-    float: left;
+    height: 40%;
+    margin-left: 25%;
     overflow: hidden;
     position: relative;
     text-align: center;
     cursor: default;
     background: #000;
+    margin-bottom: 2%;
   }
   
   .hovereffect .overlay {
+    margin-top: 10%;
     width: 100%;
     height: 100%;
     position: absolute;
     overflow: hidden;
     top: 0;
     left: 0;
-    padding: 50px 20px;
+    padding: 5% 10%;
   }
   
   .hovereffect img {
@@ -250,7 +252,6 @@ body, hr.fancy-line:after {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
-
 
 /**** Social Media Section ****/
 #social_media {
