@@ -336,6 +336,16 @@ a {
 /**** Responsiveness ****/
 @media (max-width: 1028px) {
 
+    .navigation_bar_cellphone_view{
+        margin-top: 3%;
+    }
+
+    .my_logo {
+        width: 0%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
     #title {
         text-align: center;
     }
@@ -354,7 +364,7 @@ a {
 
     .first_joke_button {
         width: 70%;
-        height: 20%;
+        height: 25%;
         font-size: .7rem;
         text-align: center;
     }
@@ -374,6 +384,12 @@ a {
         margin-bottom: 5%;
         right: 0%;
         top: 0%;
+    }
+
+    /*** Skill Section ****/
+    .skill_container {
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
 }
