@@ -32,25 +32,28 @@
 
             <!-- Nav Bar -->
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="">Coding is fun</a>
+                <a class="navbar-brand my_logo" style="position: fixed; left: 5%;" href="#title">
+                    <img src="images/my_logo.png" alt="" width="80%">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white;" href="">About me</a>
+                        <li class="nav-item navigation_bar">
+                            <a class="nav-link" style="color: white;" href="#about_me">About me</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white;" href="">Portfolio</a>
+                        <li class="nav-item navigation_bar">
+                            <a class="nav-link" style="color: white;" href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white;" href="">Skills</a>
+                        <li class="nav-item navigation_bar">
+                            <a class="nav-link" style="color: white;" href="#skills">Skills</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white;" href="https://drive.google.com/file/d/1GFmZVWXxNLmH60lDJfoRpzhSg8OdpRp3/view">CV</a>
+                        <li class="nav-item navigation_bar">
+                            <a class="nav-link" style="color: white;"
+                                href="https://drive.google.com/file/d/1GFmZVWXxNLmH60lDJfoRpzhSg8OdpRp3/view">CV</a>
                         </li>
                     </ul>
                 </div>
@@ -62,10 +65,12 @@
             <div class="row" style="margin-right: 0px; margin-left: 0px;">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <h1 class="main_title">Do you want to see some cool coding projects?</h1>
-                    <button class="btn btn-outline-light btn-lg download_button">
-                        <i class="far fa-laugh"></i>
-                        I mean... that's why I'm here
-                    </button>
+                    <a href="#portfolio">
+                        <button class="btn btn-outline-light btn-lg first_joke_button">
+                            <i class="fas fa-meh-rolling-eyes fa-2x"></i>
+                            I mean... that's why I'm here
+                        </button>
+                    </a>
                     <!-- USEFUL BUTTONS!
                     <button class="btn btn-outline-light btn-lg download_button">
                         <i class="fab fa-github"></i>
@@ -95,7 +100,7 @@
         <div class="container-fluid">
             <div class="col-lg-12">
                 <div class="row" style="margin-right: 0px; margin-left: 0px;">
-                    <h2 class="text-center" style="padding-bottom: 1%;">Hi there!</h2>
+                    <h2 class="text-center my_profile_main_header" style="padding-bottom: 1%;">Hi there!</h2>
                     <p class="text-center my_profile_text">
                         I'm a Self-taught Developer, I like to develop my own projects from scratch
                         using Python
@@ -114,7 +119,7 @@
                 <div class="text-center feature-box col-lg-4 col-md-12 col-sm-12" style="padding-right: 1.5%;">
                     <i class="fas fa-globe-africa fa-5x my_profile_icon"></i>
                     <h3 class="my_achievement_headers">International Experience</h3>
-                    <p>
+                    <p class="my_achievements_text">
                         I had an international experience in South Africa (2013)
                         and I went to 6 different countries of Southeast Asia to
                         develop an IoT project (2019).
@@ -123,7 +128,7 @@
                 <div class="text-center feature-box col-lg-4 col-md-12 col-sm-12" style="padding-right: 1.5%;">
                     <i class="fas fa-user-graduate fa-5x my_profile_icon"></i>
                     <h3 class="my_achievement_headers">Education</h3>
-                    <p>
+                    <p class="my_achievements_text">
                         I studied Industrial Engineering at ITESM with a 100% scholarship.
                         I received a recognition as one of the best students of 2019.
                     </p>
@@ -131,7 +136,7 @@
                 <div class="text-center feature-box col-lg-4 col-md-12 col-sm-12" style="padding-right: 1.5%;">
                     <i class="fas fa-award fa-5x my_profile_icon"></i>
                     <h3 class="my_achievement_headers">Awards</h3>
-                    <p>
+                    <p class="my_achievements_text">
                         Excellence Award to develop the best project out of 24 in Southeast Asia.
                     </p>
                 </div>
@@ -139,7 +144,7 @@
         </div>
     </section>
     <section id="portfolio">
-        <div class="container-fluid">
+        <div class="container-fluid carousel_container">
             <h1 class="portfolio_header">Portfolio</h1>
             <h2 class="instructions">Hover over the image</h2>
         </div>
@@ -159,8 +164,8 @@
                                     <p class="text-center">
                                         <br>
                                         Webpage that analyses the behvaior of COVID among the top 10
-                                        and the worst 10 countries. We also gathered some interesting facts 
-                                        such as Countries with the highest number of deceased, Best Global Responses 
+                                        and the worst 10 countries. We also gathered some interesting facts
+                                        such as Countries with the highest number of deceased, Best Global Responses
                                         to COVID-19, Cases per Million People, etc.
                                         <br>
                                         <a href="https://coronaviruspy.herokuapp.com/">
@@ -340,26 +345,97 @@
             </a>
         </div>
     </section>
-    <!-- USEFUL BUTTONS!
-    <section id="social_media">
-        <div class="container-fluid">
-            <h2 class="social_media_header">My Social Media</h2>
-            <button class="btn btn-outline-light btn-lg download_button">
-                <i class="fab fa-github fa-2x"></i>
-            </button>
-            <button class="btn btn-outline-light btn-lg download_button">
-                <i class="fab fa-twitter"></i>
-            </button>
-            <button class="btn btn-outline-light btn-lg download_button">
-                <i class="fab fa-linkedin"></i>
-            </button>
-            <button class="btn btn-outline-light btn-lg download_button">
-                <i class="fab fa-medium"></i>
-            </button>
-        </div>
+    <section id="skills" class="skill-section p-3 p-lg-2 d-flex align-items-center">
+        <div class="w-100 d-flex">
+            <div class="container-fluid p-3">
 
+                <h1 class="text-center mb-3 skill_header">Skills</h1>
+                <div class="row g-0 text-black-50 skill_container">
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fab fa-python text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">Python</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fab fa-js text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">Javascript</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fab fa-html5 text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">HTML 5</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fas fa-file-code text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">CSS 5</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fab fa-bootstrap text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">Bootstrap 5</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fas fa-database text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">SQL</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fab fa-github text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">GitHub</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fas fa-table text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">Pandas (Python)</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fas fa-code text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">Flask (Python)</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fas fa-terminal text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">PowerShell</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fas fa-laptop-code text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">XML</h3>
+                    </div>
+                    <div class="skill-column col-md-3 d-flex justify-content-center p-5">
+                        <i class="fas fa-cloud text-center skill_icon_pic" style="font-size: 50px;"></i>
+                        <h3 class="skill_icon_text">Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    -->
+    <section id="contact_me">
+        <div class="container-fluid contact_me_container">
+            <div class="col-lg-12">
+                <div class="row" style="margin-right: 0px; margin-left: 0px;">
+                    <h2 class="text-center contact_me_main_header">Want to know more about me?</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <a href="https://github.com/david-torres-by">
+                    <button class="btn btn-outline-light btn-lg download_button">
+                        <i class="fab fa-github fa-1x"></i>
+                    </button>
+                </a>
+                <a href="https://twitter.com/davidtorresc8">
+                    <button class="btn btn-outline-light btn-lg download_button">
+                        <i class="fab fa-twitter fa-1x"></i>
+                    </button>
+                </a>
+                <a href="https://www.linkedin.com/in/david-tc/">
+                    <button class="btn btn-outline-light btn-lg download_button">
+                        <i class="fab fa-linkedin fa-1x"></i>
+                    </button>
+                </a>
+                <a href="https://davidtorresc.medium.com/">
+                    <button class="btn btn-outline-light btn-lg download_button">
+                        <i class="fab fa-medium fa-1x"></i>
+                    </button>
+                </a>
+                <h3 class="sign">© 2021 David Torres.</h3>
+            </div>
+        </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
