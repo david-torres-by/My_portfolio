@@ -28,7 +28,6 @@ p {
 a {
     z-index: 2;
 }
-
 /**** First Section *****/
 
 /** The first one is top, second is left and right, third one is bottom **/
@@ -75,7 +74,7 @@ a {
     transform: rotate(340deg);
     margin-bottom: 60%;
     position: absolute;
-    right: 5%;
+    right: 7.5%;
     top: 5%;
     z-index: 1;
 }
@@ -269,7 +268,7 @@ a {
 }
 
 .download_button {
-    margin: 0% 5% 5% 5%;
+    margin: 0% 5% 0% 5%;
 }
 
 /**** Skill Section ****/
@@ -281,8 +280,7 @@ a {
 }
 
 .skill_container {
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-top: 2%;
 }
 
 .skill_header {
@@ -292,15 +290,16 @@ a {
 }
 
 .skill_icon_text {
-    padding-left: 10%;
     font-weight: 500;
     font-size: 1.3rem;
     padding-top: 3.5%;
     color: #053e57;
 }
 
-.skill_icon_pic {
+.skill_icon_pic_and_text {
     color: #053e57;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .skill_icon_pic:hover {
@@ -331,6 +330,7 @@ a {
 .sign {
     color: #fff;
     padding-bottom: 1%;
+    padding-top: 1.5%;
 }
 
 /**** Responsiveness ****/
@@ -342,16 +342,12 @@ a {
 
     .my_logo {
         width: 0%;
-        margin-left: 10%;
         margin-top: 5%;
+        font-size: smaller;
     }
 
     #title {
         text-align: center;
-    }
-
-    .my_logo {
-        font-size: 1.5rem;
     }
 
     .container-fluid {
@@ -386,10 +382,32 @@ a {
         top: 0%;
     }
 
+    /** Portfolio Section ***/
+
     /*** Skill Section ****/
     .skill_container {
         margin-left: 0%;
         margin-right: 0%;
     }
+    
+    .skill_header {
+        color: #053e57;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
 
+    .skill_icon_text {
+        font-weight: 500;
+        font-size: .8rem;
+        padding-top: 6%;
+    }
+
+    .skill_column_responsive {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    
+    .skill_icon_pic_and_text {
+
+    }
 }
